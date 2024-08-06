@@ -1,0 +1,78 @@
+.task-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-form input {
+  width: 75%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.task-form button {
+  width: 20%;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.task-list li .completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-list button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.task-list .completeBtnDone {
+  background-color: #2cca2f;
+  color: #333;
+}
+
+.task-list .deleteBtn {
+  background-color: #b41111;
+  color: white;
+}
+
+.task-list .editBtn {
+  background-color: #eadd23;
+  color: #333;
+}
+
+.task-form .textUpdate {
+  background-color: #eadd23;
+  color: #333;
+}
+
+.task-form .textAdd {
+  background-color: #2c7bca;
+  color: #ffffff;
+}
+
+.task-list .completeBtn {
+  background-color: #9dcf9e83;
+  color: #706a6aa5;
+}

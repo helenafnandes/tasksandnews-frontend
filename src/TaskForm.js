@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./TaskList.css";
 
 const TaskForm = ({ addTask, isEditing, currentTask, updateTask }) => {
   const [task, setTask] = useState({ title: "", completed: false });
@@ -32,10 +33,12 @@ const TaskForm = ({ addTask, isEditing, currentTask, updateTask }) => {
         name="title"
         value={task.title}
         onChange={handleChange}
-        placeholder="Digite uma nova tarefa"
+        placeholder="Enter a new task"
         required
       />
-      <button type="submit">{isEditing ? "Atualizar" : "Adicionar"}</button>
+      <button className={isEditing ? "textUpdate" : "textAdd"} type="submit">
+        {isEditing ? "Update" : "Add"}
+      </button>
     </form>
   );
 };
