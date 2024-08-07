@@ -13,7 +13,7 @@ const NewsFeed = ({ stories }) => {
               rel="noopener noreferrer"
               className="newsfeed-content"
             >
-              <h3>{story.title}</h3>
+              <h3 class="truncate">{story.title}</h3>
               <p>{new URL(story.url).hostname}</p>
             </a>
           </div>
