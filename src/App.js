@@ -136,9 +136,12 @@ const App = () => {
           toggleCompleted={toggleCompleted}
         />
       </div>
-      <footer className="app">
+      <div className="app">
         <h2>Hacker News Stories</h2>
         <NewsFeed stories={stories} />
+      </div>
+      <footer class="footer">
+        <a href="">View on Github</a>
       </footer>
     </div>
   );
